@@ -1,2 +1,17 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System;
+
+namespace Variables
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int numero1 = 10;
+            int numero2 = 20;
+            int resultado = numero1 + numero2;
+
+       
+            Console.WriteLine("El resultado: " + resultado);
+        }
+    }
+}
