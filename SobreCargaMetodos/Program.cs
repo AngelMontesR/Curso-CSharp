@@ -11,6 +11,10 @@ namespace SobreCargaMetodos
             Operaciones operaciones = new Operaciones();
             Console.WriteLine(operaciones.Sumar(1,2,3));
 
+            int[] numeros = new int[] {1,2,10};
+
+            Console.WriteLine(operaciones.Sumar(numeros));
+
         }
 
         class Operaciones
@@ -23,6 +27,20 @@ namespace SobreCargaMetodos
             public int Sumar(int a, int b, int c)
             {
                 return a + b + c;
+            }
+
+            public int Sumar(int[] numeros)
+            {
+                int resultado = 0;
+                int contador = 0;
+
+                while (contador < numeros.Length)
+                {    
+                    resultado = resultado + numeros[contador];
+                    contador++;
+                }
+
+               return resultado;
             }
 
         }
