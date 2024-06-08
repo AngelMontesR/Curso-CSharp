@@ -6,6 +6,10 @@ namespace ClasesYObjetos
     {
         static void Main(string[] args)
         {
+
+            //Las propiedades son metodos que se utilizan para acceder a los atributos de una clase,
+            //pero se utilizan como si fueran atributos
+
             Sale sale = new Sale(10,DateTime.Now);
             sale.Total = -10;
             Console.WriteLine(sale.Total);

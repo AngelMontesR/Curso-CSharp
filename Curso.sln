@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Propiedades", "Propiedades\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Herencia", "Herencia\Herencia.csproj", "{FB1BC1B2-4C4C-41FE-A0A0-2D3AB3E93932}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SobreCargaMetodos", "SobreCargaMetodos\SobreCargaMetodos.csproj", "{06B6948D-E8AA-46FA-977F-1EFF1FEF6E7C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{FB1BC1B2-4C4C-41FE-A0A0-2D3AB3E93932}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB1BC1B2-4C4C-41FE-A0A0-2D3AB3E93932}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB1BC1B2-4C4C-41FE-A0A0-2D3AB3E93932}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06B6948D-E8AA-46FA-977F-1EFF1FEF6E7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06B6948D-E8AA-46FA-977F-1EFF1FEF6E7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06B6948D-E8AA-46FA-977F-1EFF1FEF6E7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06B6948D-E8AA-46FA-977F-1EFF1FEF6E7C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
