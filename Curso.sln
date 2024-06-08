@@ -15,9 +15,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Switch", "Switch\Switch.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arreglo", "Arreglo\Arreglo.csproj", "{2E863401-D4ED-4640-B21F-49F2EDFECFD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "While", "While\While.csproj", "{BD5D7525-98E3-4DAB-98C4-DBE1DE73C8CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "While", "While\While.csproj", "{BD5D7525-98E3-4DAB-98C4-DBE1DE73C8CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "For", "For\For.csproj", "{AC7A287C-A949-4EF9-971A-5A3D7B6B911A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "For", "For\For.csproj", "{AC7A287C-A949-4EF9-971A-5A3D7B6B911A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClasesYObjetos", "ClasesYObjetos\ClasesYObjetos.csproj", "{3D0A19EC-03FD-493B-BF24-F21C5F1C882F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{AC7A287C-A949-4EF9-971A-5A3D7B6B911A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC7A287C-A949-4EF9-971A-5A3D7B6B911A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC7A287C-A949-4EF9-971A-5A3D7B6B911A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D0A19EC-03FD-493B-BF24-F21C5F1C882F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D0A19EC-03FD-493B-BF24-F21C5F1C882F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D0A19EC-03FD-493B-BF24-F21C5F1C882F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D0A19EC-03FD-493B-BF24-F21C5F1C882F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
