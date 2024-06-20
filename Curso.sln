@@ -33,7 +33,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Static", "Static\Static.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interface", "Interface\Interface.csproj", "{8C2070BB-065C-4EA1-AD61-D46A8D9B3C52}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics", "Generics\Generics.csproj", "{0E06DF42-9CF7-4622-9556-84767F38FDDE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generics", "Generics\Generics.csproj", "{0E06DF42-9CF7-4622-9556-84767F38FDDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSON", "JSON\JSON.csproj", "{9CD87702-BB9A-4388-A89F-31DAA2886EE6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +107,10 @@ Global
 		{0E06DF42-9CF7-4622-9556-84767F38FDDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E06DF42-9CF7-4622-9556-84767F38FDDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E06DF42-9CF7-4622-9556-84767F38FDDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CD87702-BB9A-4388-A89F-31DAA2886EE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CD87702-BB9A-4388-A89F-31DAA2886EE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CD87702-BB9A-4388-A89F-31DAA2886EE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CD87702-BB9A-4388-A89F-31DAA2886EE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
