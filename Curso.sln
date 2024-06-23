@@ -35,7 +35,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interface", "Interface\Inte
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generics", "Generics\Generics.csproj", "{0E06DF42-9CF7-4622-9556-84767F38FDDE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSON", "JSON\JSON.csproj", "{9CD87702-BB9A-4388-A89F-31DAA2886EE6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JSON", "JSON\JSON.csproj", "{9CD87702-BB9A-4388-A89F-31DAA2886EE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lista", "Lista\Lista.csproj", "{0098F04E-F484-4690-B726-837E36CFC004}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -111,6 +113,10 @@ Global
 		{9CD87702-BB9A-4388-A89F-31DAA2886EE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CD87702-BB9A-4388-A89F-31DAA2886EE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9CD87702-BB9A-4388-A89F-31DAA2886EE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0098F04E-F484-4690-B726-837E36CFC004}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0098F04E-F484-4690-B726-837E36CFC004}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0098F04E-F484-4690-B726-837E36CFC004}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0098F04E-F484-4690-B726-837E36CFC004}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
