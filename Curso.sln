@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lista", "Lista\Lista.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForEach", "ForEach\ForEach.csproj", "{A0BBC62C-0FE4-4EED-A031-2C9570B9EF1B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListaComandos", "ListaComandos\ListaComandos.csproj", "{3F9F2413-7CBF-4C54-B0E6-733DA4014EFF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +125,10 @@ Global
 		{A0BBC62C-0FE4-4EED-A031-2C9570B9EF1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0BBC62C-0FE4-4EED-A031-2C9570B9EF1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0BBC62C-0FE4-4EED-A031-2C9570B9EF1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F9F2413-7CBF-4C54-B0E6-733DA4014EFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F9F2413-7CBF-4C54-B0E6-733DA4014EFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F9F2413-7CBF-4C54-B0E6-733DA4014EFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F9F2413-7CBF-4C54-B0E6-733DA4014EFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
