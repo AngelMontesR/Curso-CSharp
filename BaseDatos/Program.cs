@@ -30,8 +30,10 @@ namespace BaseDatos
                             Add(autoDB);
                             break;
                         case 3:
+                            Editar(autoDB);
                             break;
                         case 4:
+                            Eliminar(autoDB);
                             break;
                         case 5:
                             repetir = false;
@@ -53,7 +55,7 @@ namespace BaseDatos
 
             foreach (Autos o in autos)
             {
-                Console.WriteLine(o.anio);
+                Console.WriteLine($"Id Auto {o.idAuto} Id Modelo {o.idModelo} Precio {o.precio} Año {o.anio}");
             }
         }
 
@@ -70,6 +72,42 @@ namespace BaseDatos
 
             Autos autos = new Autos(modelo, precio, anio);
             autosDB.Agregar(autos);
+        }
+
+        public static void Editar(AutosDB autosDB)
+        {
+            Console.Clear();
+            Show(autosDB);
+            Console.WriteLine("------ Editar Auto -------");
+            Console.WriteLine("Elige el id del Auto a editar");
+            int id = int.Parse(Console.ReadLine());
+            Autos auto = autosDB.ObtenerAuto(id);
+            if (auto != null)
+            {
+                Console.WriteLine("Escribe el Precio: ");
+                decimal precio = decimal.Parse(Console.ReadLine());
+                Console.WriteLine("Escribe el Año: ");
+                int anio = int.Parse(Console.ReadLine());
+
+                auto.precio = precio;
+                auto.anio = anio;
+                auto.idAuto = id;
+                autosDB.Editar(auto);
+            }
+            else
+            {
+                Console.WriteLine("Ingresar Id de Auto");
+            }
+        }
+
+        public static void Eliminar(AutosDB autosDB)
+        {
+            Console.Clear();
+            Show(autosDB);
+            Console.WriteLine("------ Eliminar Auto -------");
+            Console.WriteLine("Elige el id del Auto a eliminar");
+            int id = int.Parse(Console.ReadLine());
+            autosDB.Eliminar(id);
         }
 
         public static void Menu()
