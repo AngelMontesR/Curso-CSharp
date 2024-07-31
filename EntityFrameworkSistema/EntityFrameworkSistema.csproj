@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\EntityFrameworkSistema\EntityFrameworkSistema.csproj" />
+    <ProjectReference Include="..\BD\BD.csproj" />
   </ItemGroup>
 
 </Project>

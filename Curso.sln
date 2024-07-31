@@ -55,7 +55,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LINQ", "LINQ\LINQ.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JOIN", "JOIN\JOIN.csproj", "{5B317112-1824-4039-8817-7E862F6CFA60}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseDatos", "BaseDatos\BaseDatos.csproj", "{AEBC4907-5DE0-4AD9-8F64-923666275717}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseDatos", "BaseDatos\BaseDatos.csproj", "{AEBC4907-5DE0-4AD9-8F64-923666275717}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BD", "BD\BD.csproj", "{1E5A1696-F66F-43A4-B511-ED0FFF3FEE9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworkSistema", "EntityFrameworkSistema\EntityFrameworkSistema.csproj", "{99B2A028-544D-41D3-B884-E49806823BB0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -171,6 +175,14 @@ Global
 		{AEBC4907-5DE0-4AD9-8F64-923666275717}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEBC4907-5DE0-4AD9-8F64-923666275717}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AEBC4907-5DE0-4AD9-8F64-923666275717}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E5A1696-F66F-43A4-B511-ED0FFF3FEE9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E5A1696-F66F-43A4-B511-ED0FFF3FEE9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E5A1696-F66F-43A4-B511-ED0FFF3FEE9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E5A1696-F66F-43A4-B511-ED0FFF3FEE9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99B2A028-544D-41D3-B884-E49806823BB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99B2A028-544D-41D3-B884-E49806823BB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99B2A028-544D-41D3-B884-E49806823BB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99B2A028-544D-41D3-B884-E49806823BB0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
