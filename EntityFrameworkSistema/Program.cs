@@ -1,8 +1,5 @@
-﻿using System;
-using BD;
-using System.Linq;
+﻿using BD;
 using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
 
 namespace EntityFrameworkSistema
 {
@@ -13,8 +10,8 @@ namespace EntityFrameworkSistema
             DbContextOptionsBuilder<AutosDbContext> db = new DbContextOptionsBuilder<AutosDbContext>();
 
             db.UseSqlServer("Server=ANGEL; Database=AutosDB; User=montes; Password=a; TrustServerCertificate=True;");
-          
-            bool repetir = false;
+
+            bool repetir = true;
             int opcion = 0;
             do
             {
@@ -29,13 +26,13 @@ namespace EntityFrameworkSistema
                         Mostrar(db);
                         break;
                     case 2:
-                       
+                        Agregar(db);
                         break;
                     case 3:
-                       
+
                         break;
                     case 4:
-                       
+
                         break;
                     case 5:
                         repetir = false;
@@ -63,7 +60,7 @@ namespace EntityFrameworkSistema
             using (AutosDbContext context = new AutosDbContext(conexion.Options))
             {
                 List<Auto> autos = (from aut in context.Autos
-                                    //where aut.ModeloId == 1
+                                        //where aut.ModeloId == 1
                                     orderby aut.Precio descending
                                     select aut).Include(aut => aut.Modelo).ToList();
 
@@ -71,6 +68,29 @@ namespace EntityFrameworkSistema
                 {
                     Console.WriteLine($"Auto {auto.Modelo.Nombre} Precio: {auto.Precio}");
                 }
+            }
+        }
+
+        public static void Agregar(DbContextOptionsBuilder<AutosDbContext> conexion)
+        {
+            Console.Clear();
+            Console.WriteLine("------ Agregar Nuevo Auto -------");
+            Console.WriteLine("Escribe Precio: ");
+            decimal precio = decimal.Parse(Console.ReadLine());
+            Console.WriteLine("Escribe el Año: ");
+            int anio = int.Parse(Console.ReadLine());
+            Console.WriteLine("Escribe el Id del Modelo: ");
+            int modelo = int.Parse(Console.ReadLine());
+
+
+            using (AutosDbContext context = new AutosDbContext(conexion.Options))
+            {
+                Auto auto = new Auto();
+                auto.Precio = precio;
+                auto.Anio = anio;
+                auto.ModeloId = modelo;
+                context.Add(auto);
+                context.SaveChanges();
             }
         }
     }
