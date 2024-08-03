@@ -29,7 +29,7 @@ namespace EntityFrameworkSistema
                         Agregar(db);
                         break;
                     case 3:
-
+                        Editar(db);
                         break;
                     case 4:
 
@@ -91,6 +91,36 @@ namespace EntityFrameworkSistema
                 auto.ModeloId = modelo;
                 context.Add(auto);
                 context.SaveChanges();
+            }
+        }
+
+        public static void Editar(DbContextOptionsBuilder<AutosDbContext> conexion)
+        {
+            Console.Clear();
+            Mostrar(conexion);
+            Console.WriteLine("------ Editar Auto -------");
+            Console.WriteLine("Elige el id del Auto a editar");
+            int id = int.Parse(Console.ReadLine());
+
+            using (AutosDbContext context = new AutosDbContext(conexion.Options))
+            {
+                Auto autoEdit = context.Autos.Find(id);
+                if(autoEdit != null)
+                {
+                    Console.WriteLine("Escribe el Precio: ");
+                    decimal precio = decimal.Parse(Console.ReadLine());
+                    Console.WriteLine("Escribe el Año: ");
+                    int anio = int.Parse(Console.ReadLine());
+
+                    autoEdit.Precio = precio;
+                    autoEdit.Anio = anio;
+                    context.Entry(autoEdit).State = EntityState.Modified;
+                    context.SaveChanges();
+                }  
+                else
+                {
+                    Console.WriteLine("Ingresar Id de Auto");
+                }
             }
         }
     }
